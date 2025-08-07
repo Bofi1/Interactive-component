@@ -1,2 +1,1 @@
-
-![Design preview for the Interactive rating component coding challenge](./preview.jpg)
+take a look ---> https://bofi1.github.io/Interactive-component/
