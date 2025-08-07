@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en" class="flex h-full justify-center items-center">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive component</title>
+    <link rel="stylesheet" href="output.css" />
+  </head>
+  <body class="font-overpass bg-[#141518]">
+    <article
+      id="component"
+      class="flex flex-col bg-gradient-to-b from-gray-700 to-gray-900 w-[350px] h-[400px] rounded-3xl px-7 py-8 justify-between md:w-[400px] md:h-[420px]"
+    >
+      <div
+        class="flex rounded-full bg-[#282E39] p-2 w-10 h-10 justify-center items-center"
+      >
+        <img class="w-3.5 h-3.5" src="images/icon-star.svg" alt="icon-star" />
+      </div>
+      <h1 class="text-white font-semibold text-2xl">How did we go?</h1>
+      <p class="text-[15px] text-[#6C727C]">
+        Please let us know how we did with your support resquest. All feedback
+        is appreciated to help us improve our offering!
+      </p>
+      <form class="flex text-white justify-between rating-form">
+        <label
+          ><input
+            class="hidden peer"
+            type="radio"
+            name="rating"
+            value="1"
+          /><span
+            class="flex justify-center items-center w-12 h-12 bg-[#282E39] rounded-[100%] hover:bg-white hover:text-gray-900 peer-checked:bg-orange-500 peer-checked:text-white text-[#6C727C] cursor-pointer"
+            >1</span
+          ></label
+        >
+        <label
+          ><input
+            class="hidden peer"
+            type="radio"
+            name="rating"
+            value="2"
+          /><span
+            class="flex justify-center items-center w-12 h-12 bg-[#282E39] rounded-[100%] hover:bg-white hover:text-gray-900 peer-checked:bg-orange-500 peer-checked:text-white text-[#6C727C] cursor-pointer"
+            >2</span
+          ></label
+        >
+        <label
+          ><input
+            class="hidden peer"
+            type="radio"
+            name="rating"
+            value="3"
+          /><span
+            class="flex justify-center items-center w-12 h-12 bg-[#282E39] rounded-[100%] hover:bg-white hover:text-gray-900 peer-checked:bg-orange-500 peer-checked:text-white text-[#6C727C] cursor-pointer"
+            >3</span
+          ></label
+        >
+        <label
+          ><input
+            class="hidden peer"
+            type="radio"
+            name="rating"
+            value="4"
+          /><span
+            class="flex justify-center items-center w-12 h-12 bg-[#282E39] rounded-[100%] hover:bg-white hover:text-gray-900 peer-checked:bg-orange-500 peer-checked:text-white text-[#6C727C] cursor-pointer"
+            >4</span
+          ></label
+        >
+        <label
+          ><input
+            class="hidden peer"
+            type="radio"
+            name="rating"
+            value="5"
+          /><span
+            class="flex justify-center items-center w-12 h-12 bg-[#282E39] rounded-[100%] hover:bg-white hover:text-gray-900 peer-checked:bg-orange-500 peer-checked:text-white text-[#6C727C] cursor-pointer"
+            >5</span
+          ></label
+        >
+      </form>
+      <button
+        id="button"
+        class="bg-orange-500 rounded-full py-4 font-semibold text-[14px] hover:bg-orange-400 active:bg-orange-600"
+        type="button"
+      >
+        S U B M I T
+      </button>
+    </article>
+
+    <article
+      id="sent"
+      class="flex-col items-center bg-gradient-to-b from-gray-700 to-gray-900 w-[350px] h-[370px] rounded-3xl px-5 justify-between md:w-[400px] md:h-[420px] flex py-10 hidden"
+    >
+      <img class="" src="images/illustration-thank-you.svg" alt="" />
+      <p
+        id="text"
+        class="text-orange-500 bg-[#1C222C] rounded-full px-6 py-2 text-xs"
+      >
+        You selected out of 5
+      </p>
+      <p class="text-white text-3xl font-semibold">Thank you!</p>
+      <p class="text-[#6A707A] text-center text-sm md:text-base">
+        We appreciate you taking the time to give a rating. If you ever need
+        more support, don´t hesitate to get in touch!
+      </p>
+    </article>
+
+    <script src="app.js"></script>
+  </body>
+</html>
